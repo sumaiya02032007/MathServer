@@ -1,15 +1,15 @@
 # Ex.05 Design a Website for Server Side Processing
-## Date:05/10/2025
+## Date:07/10/2025
 
 ## AIM:
- To design a website to calculate the power of a lamp filament in an incandescent bulb in the server side. 
+To design a website to calculate the Body Mass Index in the server side.
 
 
 ## FORMULA:
-P = I<sup>2</sup>R
-<br> P --> Power (in watts)
-<br> I --> Intensity
-<br> R --> Resistance
+BMI = W(H/100*2)
+BMI --> Body Mass Index
+W --> Weight
+H --> Height
 
 ## DESIGN STEPS:
 
@@ -38,7 +38,6 @@ math.py
 <html>
 <head>
 <title>Body Mass Index</title>
-<h1 style="color:blue;">SUMAIYA S (25016731)</h1>
 <style type="text/css">
 body
 {
@@ -77,6 +76,7 @@ padding-top: 20px;
   <div class="edge">
   <div class="box">
   <h1>Body Mass Index</h1>
+  <h2>SUMAIYA.S(25016731)</h2>
   <form method="POST">
     {% csrf_token %}
   <div class="formelt">
@@ -138,7 +138,7 @@ urlpatterns = [
 ![alt text](<Screenshot 2025-10-05 220530.png>)
 
 ## HOMEPAGE:
-![alt text](<Screenshot 2025-10-05 220450.png>)
+![alt text](<Screenshot 2025-10-05 220530.png>)
 
 ## RESULT:
 The program for performing server side processing is completed successfully.
