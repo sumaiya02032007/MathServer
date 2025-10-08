@@ -6,11 +6,12 @@ To design a website to calculate the Body Mass Index in the server side.
 
 
 ## FORMULA:
+```
 BMI = W(H/100*2)
 BMI --> Body Mass Index
 W --> Weight
 H --> Height
-
+```
 ## DESIGN STEPS:
 
 ### Step 1:
