@@ -6,11 +6,12 @@ To design a website to calculate the Body Mass Index in the server side.
 
 
 ## FORMULA:
+```
 BMI = W(H/100*2)
 BMI --> Body Mass Index
 W --> Weight
 H --> Height
-
+```
 ## DESIGN STEPS:
 
 ### Step 1:
@@ -39,44 +40,64 @@ math.py
 <head>
 <title>Body Mass Index</title>
 <style type="text/css">
-body
-{
-  background-color:red;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #67b7c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.edge{
-width:1440px;
-margin-left:auto;
-margin-right:auto;
-padding-top:250px;
-padding-left:300px;    
+
+.container {
+  background: rgb(186, 129, 129);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
 }
-.box{
-display:block;
-border:Thick dashed lime;
-width:500px;
-min-height:300px;
-font-size:20px;
-background-color:pink;    
+
+h1 {
+  color: #5c4b4b;
+  margin-bottom: 20px;
 }
-.formelt{
-    color:orango;
-    text-align: center;
-    margin-top: 7px;
-    margin-bottom: 6px;
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
 }
-h1
-{
-color:rgb(255,0,179);
-text-align:center;
-padding-top: 20px;
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 </style>
 </head>
 <body>
   <div class="edge">
   <div class="box">
   <h1>Body Mass Index</h1>
-  <h2>SUMAIYA.S(25016731)</h2>
+  <h2>SUMAIYA.S 25016731</h2>
   <form method="POST">
     {% csrf_token %}
   <div class="formelt">
@@ -96,7 +117,7 @@ padding-top: 20px;
   </div>
 </body>
 </html> 
- 
+
  view.py
 
  from django.shortcuts import render
@@ -138,7 +159,7 @@ urlpatterns = [
 ![alt text](<Screenshot 2025-10-05 220530.png>)
 
 ## HOMEPAGE:
-![alt text](<Screenshot 2025-10-08 215550.png>)
+![alt text](<Screenshot 2025-10-18 074840.png>)
 
 ## RESULT:
 The program for performing server side processing is completed successfully.
